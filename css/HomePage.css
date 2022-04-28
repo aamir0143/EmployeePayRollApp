@@ -1,4 +1,4 @@
-/*Defined css properties for body,header,logo, image and text element for homepage(UC14)*/
+/*Defined css properties for body,header,logo, image and text element for homepage*/
 
 * {
     box-sizing: border-box;
@@ -49,7 +49,7 @@ body {
 }
 
 
-/*Defined css properties for header section(UC15)*/
+/*Defined css properties for header section*/
 
 .add_button {
     font: normal normal normal 22px/29px Roboto;
@@ -157,7 +157,7 @@ body {
 }
 
 
-/*Defined css properties for tables(UC16).*/
+/*Defined css properties for tables*/
 
 .table-main {
     width: 80%;
@@ -265,7 +265,7 @@ td:first-child {
 }
 
 
-/*Defining media query(UC18)*/
+/*Defining media query*/
 
 @media only screen and (max-width: 590px) {
     .header_container {

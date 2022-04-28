@@ -1,4 +1,4 @@
-/*Defined css properties for body,header,logo, image and text element(UC1)*/
+/*Defined css properties for body,header,logo, image and text element*/
 
 * {
     box-sizing: border-box;
@@ -58,7 +58,7 @@ a {
 }
 
 
-/*Defined css properties for form and input name(UC2)*/
+/*Defined css properties for form and input name*/
 
 .form-content {
     min-height: calc(100%-100px);
@@ -145,7 +145,7 @@ a {
 }
 
 
-/*Defined css properties for form and input name(UC3)*/
+/*Defined css properties for form and input name*/
 
 .profile-radio-content {
     display: flex;
@@ -172,7 +172,7 @@ a {
 }
 
 
-/*Defined css properties for form and input type radio for gender(UC4)*/
+/*Defined css properties for form and input type radio for gender*/
 
 input[type='radio']:checked:after {
     width: 12px;
@@ -199,7 +199,7 @@ input[type='radio']:checked:after {
 }
 
 
-/*Defined css properties for form and input type checkbox for department(UC4)*/
+/*Defined css properties for form and input type checkbox for department*/
 
 .form_checkboxes {
     align-items: center;
@@ -211,14 +211,14 @@ input[type='radio']:checked:after {
 }
 
 
-/*Defined css properties for form and input type range for salary(UC4)*/
+/*Defined css properties for form and input type range for salary*/
 
 .salary {
     width: 70%;
 }
 
 
-/*Defined css properties for select for day, month and year(UC5)*/
+/*Defined css properties for select for day, month and year*/
 
 select {
     padding: 10px 12px;
@@ -235,7 +235,7 @@ select {
 }
 
 
-/*Defined css properties for buttons and error(UC6)*/
+/*Defined css properties for buttons and error*/
 
 .button_container {
     display: flex;
@@ -317,7 +317,7 @@ select {
 }
 
 
-/*Defining media query(UC6)*/
+/*Defining media query*/
 
 @media only screen and (max-width: 1050px) {
     .row-content {
