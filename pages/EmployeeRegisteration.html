@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/EmployeeRegisteration.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Register Form</title>
+</head>
+
+<body>
+    <!-- Welcome To The Employee Management System< -->
+    <!--Creating the header element with logo and text using flex and css-->
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/images/logo.png" alt="Logo" />
+            <div class="emp_text">
+                <span><a href="./HomePage.html">Employee</a></span><br>
+                <span class="emp_text_payroll">Payroll</span>
+            </div>
+        </div>
+    </header>
+    <!--Creating the form element with input name-->
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save(event);" onreset="resetForm();">
+            <span class="form-head">Employee Payroll Register</span>
+            <div class="row-content">
+                <label class="label text label-bold" for="empName">Employee Name</label>
+                <input type="text" class="input" name="empName " id="empName" placeholder="Enter Your Name Here..." required>
+                <error class="error" id="errorName"></error>
+            </div>
+
+             <!--Creating the form element with input Contact-->
+             <div class="row-content">
+                <label class="label numeric" for="empContact">Employee Contact</label>
+                <input type="text" class="input" name="empContact " id="empContact" placeholder="Enter Your Contact Here..." required>
+                <error class="error" id="errorContact"></error>
+            </div>
+
+             <!--Creating the form element with input Id-->
+             <div class="row-content">
+                <label class="label numeric" for="empId">Employee Id</label>
+                <input type="text" class="input" name="empId " id="empId" placeholder="Enter Your Id Here..." required>
+                <error class="error" id="errorId"></error>
+            </div>
+
+            <!--Creating the form element with input email id-->
+            <div class="row-content">
+                <label class="label text label-bold" for="empEmail">Employee Email Id</label>
+                <input type="text" class="input" name="empEmail " id="empEmail" placeholder="Enter Your Email Here..." required>
+                <error class="error" id="errorEmail"></error>
+            </div>
+            <!--Creating the form element with input type radio to select profile pic-->
+            <div class="row-content">
+                <label class="label text label-bold" for="profiles">Profile Image</label>
+                <div class="profile-radio-content">
+                    <label>
+                        <input type="radio" name="profile" id="profile1" value="../assets/profile-images/Ellipse -1.png" required>
+                        <img class="profile" id="img1" src="../assets/profile-images/Ellipse -1.png" />
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" id="profile2" value="../assets/profile-images/Ellipse -3.png" required>
+                        <img class="profile" id="img2" src="../assets/profile-images/Ellipse -3.png" />
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" id="profile3" value="../assets/profile-images/Ellipse -5.png" required>
+                        <img class="profile" id="img3" src="../assets/profile-images/Ellipse -5.png" />
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" id="profile4" value="../assets/profile-images/Ellipse -4.png" required>
+                        <img class="profile" id="img4" src="../assets/profile-images/Ellipse -4.png" />
+                    </label>
+                </div>
+            </div>
+            <!--Creating the form element with input type radio to select gender-->
+            <div class="row-content">
+                <label class="label text label-bold" for="gender">Gender</label>
+                <div class="form_gender">
+                    <label class="label text label-text">
+                        <input type="radio" name="gender" id="genderMale" value="Male" required>&nbspMale
+                    </label>
+                    <label class="label text label-text">
+                        <input type="radio" name="gender" id="genderFemale" value="Female" required>&nbspFemale
+                    </label>
+                    <label class="label text label-text">
+                        <input type="radio" name="gender" id="genderOther" value="Others" required>&nbspOthers
+                    </label>
+                </div>
+            </div>
+            <!--Creating the form element with input type checkbox to select department-->
+            <div class="row-content">
+                <label class="label text label-bold" for="Department">Department</label>
+                <div class="form_checkboxes">
+                    <input class="checkbox" type="checkbox" name="dept" id="hr" value="hr">
+                    <label class="text label-text" for="hr">HR</label>
+                </div>
+                <div class="form_checkboxes">
+                    <input type="checkbox" name="dept" id="sales" value="sales">
+                    <label class="text label-text" for="sales">Sales</label>
+                </div>
+                <div class="form_checkboxes">
+                    <input type="checkbox" name="dept" id="finance" value="finance">
+                    <label class="text label-text" for="finance">Finance</label>
+                </div>
+                <div class="form_checkboxes">
+                    <input type="checkbox" name="dept" id="engineer" value="engineer">
+                    <label class="text label-text" for="engineer">Engineer</label>
+                </div>
+                <div class="form_checkboxes">
+                    <input type="checkbox" name="dept" id="others" value="others">
+                    <label class="text label-text" for="others">Others</label>
+                </div>
+            </div>
+            <!--Creating the form element with input type range to select salary-->
+            <div class="row-content">
+                <label class="label text label-bold" for="salary">Salary</label>
+                <input type="range" style="accent-color: #82A70C;" name="salary" id="salary" class="salary" min="300000" max="500000" step="100" value="400000" required>
+                <output id="salaryOutput" class="text" value="450000">400000</output>
+            </div>
+            <!--Creating the form element with select to select day, month and year-->
+            <div class="row-content">
+                <label class="label text label-bold" for="DOB">DOB</label>
+                <div id="date">
+                    <select id="day" name="day">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select id="month" name="month">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+                    <select id="year" name="year">
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995">1995</option>
+                        <option value="1994">1994</option>
+                        <option value="1993">1993</option>
+                        <option value="1992">1992</option>
+                        <option value="1991">1991</option>
+                        <option value="1990">1990</option>
+                    </select>
+                    <error id="errorDate" class="error errorDate" name="errorDate"></error>
+                </div>
+            </div>
+
+            <!--Creating the form element with notes and buttons-->
+            <div class="row-content">
+                <label class="label text label-bold" for="notes">Notes</label>
+                <textarea rows="4" class="input" placeholder="Enter Any Notes or Comments here" id="notes" style="height: 100px;" required></textarea>
+            </div>
+            <div class="button_container">
+                <a href="./Homepage.html" class="button cancel_button">Cancel</a>
+                <div class="buttons">
+                    <button type="submit" class="submit_button button" id="submitButton">Submit</button>
+                    <button type="reset" class="reset_button button">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Adding the script file for salary validation-->
+    <script type="text/javascript" src="../js/EmployeeRegisteration.js"></script>
+    <script src="../js/SiteProperty.js"></script>
+    <script src="../js/Utility.js"></script>
+</body>
+
+</html>

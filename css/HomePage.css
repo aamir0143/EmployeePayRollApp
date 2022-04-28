@@ -1,0 +1,280 @@
+/*Defined css properties for body,header,logo, image and text element for homepage(UC14)*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.header {
+    padding: 15px 0;
+    background-color: white;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid 82A70C;
+    width: 80%;
+    justify-content: start;
+}
+
+.logo-content>img {
+    border: 0px solid 82A70C;
+    margin-right: 5px;
+}
+
+.emp_text,
+.emp_text_payroll {
+    font: normal normal bold 20px/25px Roboto;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #82A70C;
+    line-height: 20px;
+}
+
+.emp_text_payroll {
+    color: #42515F;
+}
+
+
+/*Defined css properties for header section(UC15)*/
+
+.add_button {
+    font: normal normal normal 22px/29px Roboto;
+    letter-spacing: 0px;
+    color: white;
+    opacity: 1;
+    background-color: #82A70C;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+}
+
+.add_button:hover {
+    box-shadow: 0px 0px 15px #82A70C;
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+}
+
+.icons {
+    width: 20px;
+    margin-right: 3px;
+}
+
+.main_Container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 80px);
+    background-color: #f7f7f7;
+    padding: 30px 0 10px;
+    box-sizing: border-box;
+}
+
+.header_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.header_text {
+    font: normal normal normal 22px/29px Roboto;
+    color: #42515F;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.emp_count {
+    color: white;
+    background-color: #82A70C;
+    border-radius: 50%;
+    font-size: 15px;
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 5px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
+}
+
+.emp_count:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+}
+
+
+/*Defined css properties for tables(UC16).*/
+
+.table-main {
+    width: 80%;
+    margin: 0 auto;
+    overflow-y: hidden;
+    border-radius: 5px;
+}
+
+.table {
+    width: 100%;
+    border-spacing: 0 8px;
+    min-width: 800px;
+}
+
+td,
+th {
+    padding: 5px 8px;
+}
+
+th {
+    background: #42515f 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal normal 18px/24px Roboto;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 0px solid #dddddd;
+    opacity: 1;
+    font-size: 14px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+th:hover {
+    color: #82A70C;
+    font-weight: 700;
+    transition-duration: 0.1s;
+}
+
+tr:not(:first-child) {
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
+    padding: 5px;
+}
+
+tr:not(:first-child):hover {
+    box-shadow: 0px 0px 15px #82A70C;
+    transform: scale(1.0001);
+    transition-duration: 0.5s;
+}
+
+td {
+    font: normal normal normal 14px/21px Roboto;
+    letter-spacing: 0.1px;
+    font-size: 13px;
+    color: #42515F;
+    text-align: center;
+}
+
+td:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.td-img img:first-child {
+    margin: 10px 0;
+    margin-right: 10px;
+    margin-left: 80px;
+    align-items: center;
+}
+
+.td-icon img:first-child {
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.td-icon img {
+    cursor: pointer;
+    width: 20%;
+    height: 20%;
+}
+
+.td-img img {
+    cursor: pointer;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.td-img img:hover {
+    box-shadow: 0px 0px 15px #82A70C;
+    transition-duration: 0.5s;
+}
+
+.dept_label {
+    background-color: #e9fea5;
+    border-radius: 40%;
+    width: fit-content;
+    margin-right: 5pX;
+    padding: 3px 10px;
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 300;
+}
+
+
+/*Defining media query(UC18)*/
+
+@media only screen and (max-width: 590px) {
+    .header_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .add_button {
+        margin-top: 20px;
+        width: 70%;
+        padding: 8px;
+    }
+}

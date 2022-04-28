@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="../css/Homepage.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Employee Payroll Homepage</title>
+</head>
+
+<body>
+    <!-- Welcome To The Employee Payroll Home Page< -->
+    <!--Creating the header element with logo and text using flex and css for homepage-->
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/images/logo.png" alt="Logo" />
+            <div class="emp_text">
+                <span>Employee</span><br>
+                <span class="emp_text_payroll">Payroll</span>
+            </div>
+        </div>
+    </header>
+    <!--Creating main header container with text and add button-->
+    <div class="main_Container">
+        <div class="header_container">
+            <span class="header_text">
+                Employee Details<span class="emp_count" id="emp_count">10</span>
+            </span>
+            <a href="./EmployeeRegisteration.html" class="add_button">
+                <img src="../assets/icons/add-24px.svg" class="icons" />Add Employee
+            </a>
+        </div>
+        <!--Creating employee data in tablular format-->
+        <div class="table-main">
+            <table id="display_container" class="table">
+            </table>
+        </div>
+    </div>
+    <!-- Adding the script file for showing employee data -->
+    <script src="../js/HomePage.js"></script>
+    <script src="../js/SiteProperty.js"></script>
+</body>
+
+</html>

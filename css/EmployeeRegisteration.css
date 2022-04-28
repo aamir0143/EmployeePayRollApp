@@ -1,0 +1,396 @@
+/*Defined css properties for body,header,logo, image and text element(UC1)*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.header {
+    padding: 15px 0;
+    background-color: white;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid 82A70C;
+    width: 80%;
+    justify-content: start;
+}
+
+.logo-content>img {
+    border: 0px solid 82A70C;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    font: normal normal bold 20px/25px Roboto;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #82A70C;
+    line-height: 20px;
+}
+
+.emp_text,
+.emp_text_payroll {
+    font: normal normal bold 20px/25px Roboto;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #82A70C;
+    line-height: 20px;
+}
+
+.emp_text_payroll {
+    color: #42515F;
+}
+
+
+/*Defined css properties for form and input name(UC2)*/
+
+.form-content {
+    min-height: calc(100%-100px);
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid #82A70C;
+}
+
+.form {
+    width: 65%;
+    padding: 44px 60px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F5F5F5;
+    border-radius: 8px;
+    opacity: 1;
+    margin: 5% 0%;
+}
+
+.form:hover {
+    box-shadow: 0px 0px 15px #111;
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+}
+
+.form-head {
+    font: normal normal bold 28px/37px Roboto;
+    letter-spacing: 0.8px;
+    color: #42515F;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    opacity: 1;
+    display: flex;
+    font-size: 25px;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    border: 0px solid #82A70C;
+}
+
+.label {
+    min-width: 140px;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.text {
+    font-family: Roboto;
+    font-size: 16px;
+    opacity: 1;
+    color: #42515f;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 8px;
+    outline: none;
+    resize: vertical;
+    color: #42515f;
+}
+
+::placeholder {
+    color: rgb(216, 216, 216);
+    opacity: 1;
+    font-family: Roboto;
+}
+
+.input:focus {
+    border: 1px solid #82A70C;
+}
+
+.input:focus::placeholder {
+    color: rgb(169, 169, 169);
+    opacity: 1;
+    font-family: Roboto;
+}
+
+
+/*Defined css properties for form and input name(UC3)*/
+
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-radio-content>label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+    margin-right: 30px;
+}
+
+.profile:hover {
+    box-shadow: 0px 0px 15px rgb(134, 191, 19);
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+}
+
+
+/*Defined css properties for form and input type radio for gender(UC4)*/
+
+input[type='radio']:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #82A70C;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    transition-duration: 0.5s;
+}
+
+.label-bold:hover {
+    color: #42515F;
+    font-weight: bold;
+}
+
+.label-text:hover {
+    color: #82A70C;
+}
+
+
+/*Defined css properties for form and input type checkbox for department(UC4)*/
+
+.form_checkboxes {
+    align-items: center;
+    min-width: 100px;
+}
+
+.form_checkboxes>label {
+    margin: 2px;
+}
+
+
+/*Defined css properties for form and input type range for salary(UC4)*/
+
+.salary {
+    width: 70%;
+}
+
+
+/*Defined css properties for select for day, month and year(UC5)*/
+
+select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 16px;
+    font: normal normal bold 16px Roboto;
+    color: #42515f;
+    background-color: transparent;
+    min-width: 100px;
+    outline: none;
+    margin-right: 15px;
+}
+
+
+/*Defined css properties for buttons and error(UC6)*/
+
+.button_container {
+    display: flex;
+    flex-flow: row;
+    margin: 50px 0;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.button {
+    font-size: 14px;
+    font-family: Roboto;
+    color: #42515F;
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    border: none;
+    font-weight: 500;
+    min-width: 140px;
+    padding: 8px 8px;
+    cursor: pointer;
+    border: 1px solid #707070;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 15px #111;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    border: none;
+    background-color: #82A70C;
+    color: white;
+}
+
+.submit_button {
+    margin-right: 30px;
+    align-items: center;
+}
+
+.cancel_button {
+    text-decoration: none;
+    text-align: center;
+    font: Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    opacity: 1;
+}
+
+.cancel_button:hover {
+    box-shadow: 0px 0px 15px #111;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    background-color: rgb(157, 84, 84);
+    color: white;
+}
+
+.reset_button:hover {
+    box-shadow: 0px 0px 15px #42515F;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    background-color: #42515F;
+    color: white;
+}
+
+.error {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: red;
+    font-style: Roboto;
+    font-size: 13px;
+}
+
+.errorDate {
+    display: flex;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/*Defining media query(UC6)*/
+
+@media only screen and (max-width: 1050px) {
+    .row-content {
+        min-width: 60px;
+        padding: 12px 12px 12px 0px;
+        display: inline-block;
+    }
+    .cancel_button {
+        margin-left: 0px;
+    }
+    .form {
+        width: 85%;
+        padding: 44px 20px;
+        padding-left: 25px;
+    }
+    .form_checkboxes {
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form {
+        margin-top: 10px;
+    }
+    .row-content {
+        flex-direction: column;
+    }
+    .profile-radio-content {
+        margin: 5%;
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+    .profile {
+        margin: 5%;
+    }
+    select {
+        margin-bottom: 10px;
+    }
+    .button_container {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttons>button {
+        margin: 5px;
+    }
+    .button {
+        margin: 5px;
+    }
+    .form_checkboxes {
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .button {
+        display: block;
+        margin: 5px;
+    }
+    select {
+        display: block;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .button {
+        display: block;
+        margin: 5px;
+    }
+    select {
+        display: block;
+        margin: 5px;
+    }
+}
